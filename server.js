@@ -26,7 +26,7 @@ mongoose.connect('mongodb+srv://sasha:Winx4210@clusterfotogram.3phxrwf.mongodb.n
   });
 
 // Rutas de posts
-app.use('http://localhost:3001/api/posts/', postsRouter);
+app.use('/api/posts', postsRouter);
 
 // Otros middlewares y configuraciones
 

@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
   try {
     const { phrase, image } = req.body;
-    const newPost = new Post({ phrase, image, likes, comments });
+    const newPost = new Post({ phrase, image });
     const savedPost = await newPost.save();
     res.json(savedPost);
   } catch (error) {
